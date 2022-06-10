@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beevels Clone</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/image.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="js/app.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="https://use.fontawesome.com/1306022ea8.js"></script>
+  </head>
+  <body>
+    <!-- MODAL -->
+    <div class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Fill in your details</h3>
+          <h3 class="close-btn">X</h3>
+        </div>
+        <form action="#" method="get" id="form">
+          <label for="name" class="label">First Name</label>
+          <br />
+          <input type="text" name="First Name" id="first-name" />
+          <br />
+          <div id="first-message"></div>
+          <br />
+          <label for="name">Last Name</label>
+          <br />
+          <input type="text" name="Last Name" id="last-name" />
+          <br />
+          <div id="last-message"></div>
+          <br />
+          <label for="name">Email</label>
+          <br />
+          <input  name="Email" id="email" />
+          <br />
+          <div id="email-message"></div>
+          <br />
+          <label for="name">Password</label>
+          <br />
+          <input type="password" name="Password" id="password" />
+          <br />
+          <div id="password-message"></div>
+          <br />
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+        <div class="modal-footer">
+          <h4>
+            Already have an account?<span class="sign-btn"> Sign in</span>
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <!-- DESKTOP NAV-CONTAINER -->
+            <div class="nav-container">
+          <div class="logo"><img src="images/pexels logo.png" class="logo-img" alt=""><h3 class="logo-text  mobile-hidden middle-hidden desktop-reveal">Beevels</h3></div>
+          <!-- <h2 class="output">Output:</h2> -->
+          <div class="right-aligned">
+            <!-- NAVBAR -->
+            <div class="initial-nav">
+            <ul class="">
+              <li class="mobile-hidden middle-hidden desktop-reveal"><a href="#" class="mobile-hidden middle-hidden desktop-reveal">Explore</a></li>
+              <li class="mobile-hidden middle-hidden desktop-reveal"><a href="#" class="mobile-hidden middle-hidden desktop-reveal">License</a></li>
+              <li class=""><a href="#" class=""><i class="fa fa-bell icon-white" aria-hidden="true"></i></a></li>
+              <li class="mobile-hidden middle-reveal desktop-reveal ridwan-list"><img class="mobile-hidden middle-reveal desktop-reveal ridwan" src="images/ridwan.jpg" alt=""></li>
+              <li class="mobile-hidden middle-reveal desktop-reveal"><i class="fa fa-sort-desc mobile-hidden middle-reveal desktop-reveal dropdown" aria-hidden="true"></i></li>
+              <li class="mobile-hidden middle-reveal desktop-reveal"><a href="#" class="mobile-hidden middle-reveal desktop-reveal upload">Upload</a></li>
+              <!-- <li class="desktop-hidden middle-hidden"></li> -->
+              <i class="fa fa-bars open-btn icon-white  desktop-hidden middle-hidden mobile-hidden" aria-hidden="true" id="open-btn"></i>
+              
+            </ul>
+          </div>
+          </div>
+          <!-- MOBILE-HIDDEN-NAVBAR -->
+          <nav>
+            <div class="logo"><img src="images/pexels logo.png" class="logo-img embed" alt=""></div>
+          <div class="nav-input-container "><input type="text" class="nav-input" placeholder="Search for free photos "><i class="fa fa-search nav-search" aria-hidden="true"></i></div>
+          <!-- <div class="input-container nav-input-container">
+            <form action="#">
+                <input type="text" class="brief-input nav-input" placeholder="Search for free photos and videos"><i class="fa fa-search brief-search" aria-hidden="true"></i>
+          </form> 
+        </div> -->
+          <div class="nav-right-aligned">
+            <i class="fa fa-bell nav-notification icon-white" aria-hidden="true"></i>
+          <i class="fa fa-times nav-close-btn icon-white" aria-hidden="true"></i>
+          </div>
+          </nav>
+          </div>
+        </div>
+        <!-- BRIEF TEXT -->
+        <div class="brief">
+          <h3 class="brief-heading">The best free stock photos, royalty free images & videos shared by creators.</h3>
+          
+          <div class="input-container">
+            <form action="#">
+                <input type="text" class="brief-input" placeholder="Search for free photos and videos"><i class="fa fa-search brief-search" aria-hidden="true"></i>
+          </form> 
+        </div>
+          
+          <p class="brief-paragraph"><span class="mobile-hidden suggested">Suggested:</span> city, business, cat, summer,more.....</p>
+        </div>
+        </div>
+      </header>
+
+      <!-- CONTENT -->
+      <section class="content">
+        <div class="inner-links">
+          <a href="#" class="home">Home</a>
+          <a href="#">Discover</a>
+          <a href="#">Videos</a>
+          <a href="#">Leaderboard</a>
+          <a href="#">Challenge</a>
+        </div>
+        <div class="intro"><h3 class="left-intro">Free Stock Photos</h3><h5 class="right-intro"><a href="#">Trending <i class="fa fa-sort-desc" aria-hidden="true"></i></a></h5></div>
+        <div class="image-container">
+          <div class="image-grid">
+            <!-- lorem2000 -->
+            <div class="gallery"></div>
+        <a class="load-more" data-img="curated">Load More</a>
+            <!-- <section>
+      <div class="container">
+        </div>
+        </section> -->
+      </div>
+          </div>
+      </section>
+
+      <!-- ACCORDION -->
+      
+  </body>
+</html>

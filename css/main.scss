@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.output{
+    // position: fixed;
+    color: white;
+}
+// MODAL
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(79, 77, 77, 0.815);
+}
+.modal-content{
+    width: 50%;
+    margin: 5% auto;
+    background-color: white;
+    .modal-header{
+        background-color: rgb(56, 198, 141);
+        display: flex;
+        padding: 1em .7em;
+        h3{
+            color: wheat;
+        }
+        .close-btn{
+            margin-left: auto;
+            cursor: pointer;
+        }
+    }
+    form{
+        padding: 1em .4em;
+        input{
+            width: 100%;
+            padding: .5em;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 2px solid rgb(56, 198, 141);
+        }
+        .submit{
+            width: 100%;
+            padding: .6em;
+            border: 3px solid rgb(56, 198, 141);
+            background-color: rgb(56, 198, 141);
+            cursor: pointer;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+    }
+        .modal-footer {
+            background-color: rgb(56, 198, 141);
+            display: flex;
+            padding: 1em .7em;
+        }
+
+    .sign-btn{
+        cursor: pointer;
+        color: green;
+    }
+}
+
+
+// To hide different NAVs on different screen sizes
+.mobile-hidden{
+    display: none;
+}
+
+
+.upload{
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+header {
+    background: url(/images/pexels-photo-3646932.jpeg);
+    background-clip: border-box;
+    background-position: center;
+    background-repeat: repeat-y;
+    padding: .9em 1.1em;
+}
+.logo {
+    display: flex;
+    .logo-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 15%;
+        cursor: pointer;
+    }
+
+}
+ul{
+    display: flex;
+    list-style: none;
+    li{
+        margin: 0 1em;
+        a{
+            text-decoration: none;
+            &:hover{
+                color: rgb(56, 198, 141);
+            }
+        }
+    }
+}
+.icon-white{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.nav-container {
+    position: fixed;
+    display: flex;
+    margin: 0 0 4em 0;
+    z-index: 1;
+}
+.right-aligned{
+    margin: .3em 0 0 65vw;
+}
+.notification {
+    margin: 0 .6em;
+}
+.nav-right-aligned {
+    margin: .6em 0 0 .2em;
+}
+.nav-notification {
+    margin: 0 .4em;
+}
+nav {
+    display: flex;
+    transform: translateX(100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(41, 39, 39);
+    background-color: black;
+    padding: .9em 1.1em;
+}
+.nav-input-container {
+    width: 70%;
+    background-color: white;
+    border-radius: 8px;
+    margin: .1em 1em;
+    height: 2.2em;
+
+    .nav-input {
+        height: 2.2em;
+        margin: .1em 0em;
+        width: 80%;
+        background-color: white;
+        padding: 1em;
+        color: green;
+        font-size: .9rem;
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .nav-search {
+        margin-left: auto;
+        color: gray;
+        font-size: 1.2rem;
+    }
+}
+
+ // BRIEF
+.brief {
+    width: 100%;
+    margin: 6em auto 7em auto;
+
+    .brief-heading {
+        font-size: 2.4rem;
+        color: white;
+    }
+
+    .input-container {
+        width: 100%;
+        background-color: white;
+        padding: .3em;
+        border-radius: 8px;
+        margin: 1em 0;
+
+        .brief-input {
+            padding: 1em .8em;
+            width: 90%;
+            background-color: white;
+            font-size: .9rem;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: none;
+        }
+
+        .brief-search {
+            margin-left: auto;
+            color: gray;
+            font-size: 1.5rem;
+        }
+    }
+
+    .brief-paragraph {
+        color: rgba(175, 170, 170, 0.798);
+        font-size: .9rem;
+    }
+}
+
+
+
+// CONTENT
+.content {
+    margin: 1em;
+}
+
+.inner-links {
+    width: 98%;
+    margin: 2em auto;
+
+    a {
+        color: gray;
+        font-weight: bold;
+        font-size: 1rem;
+        margin: 0 .5em;
+
+        &:hover {
+            color: black;
+        }
+        &:focus{
+            color: white;
+                padding: .8em 1.3em;
+                background-color: black;
+                border-radius: 9999px;
+        }
+    }
+    .home:focus{
+        color: white;
+        padding: .8em 1.3em;
+        background-color: black;
+        border-radius: 9999px;
+    }
+}
+
+.intro {
+    display: flex;
+
+    .left-intro {
+        font-size: 1.15rem;
+        color: rgba(22, 22, 22, 0.97);
+    }
+
+    .right-intro {
+        a {
+            color: rgba(22, 22, 22, 0.97);
+
+            &:hover {
+                color: rgba(10, 75, 216, 0.951);
+            }
+        }
+
+        font-size: .85rem;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width:530px) {
+    .brief{
+        margin: 8em auto 7em auto;
+    }
+        .right-aligned {
+            margin: .3em 0 0 58vw;
+        }
+
+.inner-links {
+    width: 80%;
+    margin: 2em auto;
+}
+}
+@media screen and (min-width:680px) {
+    .brief{
+        width: 100%;
+        .brief-heading {
+            font-size: 2.2rem;
+        }
+    }
+        .right-aligned {
+            margin: .3em 0 0 63vw;
+        }
+
+        .inner-links {
+            width: 90%;
+            margin: 2em auto;
+        }
+}
+@media screen and (min-width:700px) {
+    .brief{
+        .brief-heading {
+            font-size: 2.15rem;
+            color: white;
+        }
+    }
+    .inner-links {
+    width: 100%;
+    margin: 2em auto;
+    }
+}
+
+@media screen and (min-width:720px) {
+    .brief{
+        width: 95%;
+        margin: 7em auto;
+    }
+        .right-aligned {
+            margin: .3em 0 0 70vw;
+        }
+        .inner-links {
+            width: 60%;
+            margin: 2em auto;
+        }
+}
+
+@media screen and (min-width:750px) {
+    .brief {
+        width: 90%;
+    }
+}
+@media screen and (min-width:770px) {
+    .brief {
+        width: 85%;
+    }
+        .inner-links {
+            width: 60%;
+            margin: 2em auto;
+        }
+}
+
+// MIDDLE-TAB MEDIA QUERY
+@media screen and (min-width:850px){
+    // To hide different NAVs on different screen sizes
+        .middle-hidden {
+        display: none;
+        }
+        .middle-reveal{
+            display: inline;
+            color: white;
+        }
+    .ridwan-list{
+        margin-right: -.3em;
+    }
+
+    header{
+        background-position: unset;
+        background-repeat: no-repeat;
+    }
+    .ridwan{
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-top: -.2em;
+    }
+    .upload{
+        padding: .65em 1.7em;
+        background-color: rgb(56, 198, 141);
+        border-radius: 5%;
+        &:hover{
+            background-color: #fff;
+            font-weight: bolder;
+        }
+    }
+        .right-aligned {
+            margin: .3em 0 0 60vw;
+        }
+    .brief{
+        width: 80%;
+        margin: 7.5em auto 9em auto;
+        .brief-input {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: lighter;
+        }
+    }
+    .inner-links{
+        width: 60%;
+        margin: 3em auto;
+    }
+        #open-btn {
+            display: none;
+        }
+    .suggested{
+        display: unset;
+        color: white;
+    }
+}
+
+
+// DESKTOP MEDIA QUERY
+@media screen and (min-width:1000px){
+    // To hide different NAVs on different screen sizes
+    .desktop-hidden {
+        display: none;
+    }
+    .desktop-reveal{
+        display: inline;
+        color: white;
+    }
+    #open-btn{
+        display: none;
+    }
+
+    header{
+        background-position: unset;
+        background-repeat: no-repeat;
+    }
+    .logo-text{
+        margin: .5em;
+        color: white;
+        font-weight: lighter;
+        cursor: pointer;
+    }
+    ul {    
+        li {
+            margin: 0 1em;
+        }
+    }
+    .right-aligned {
+    margin: .3em 0 0 40vw;
+    }
+    .brief{
+        width: 50%;
+        margin: 7.5em auto 9em auto;
+    }
+    .brief-paragraph{
+        color: rgb(237, 230, 230);
+    }
+    .content {
+        margin: 1em 2em;
+    }
+    .inner-links{
+        width: 60%;
+        margin: 2em auto;
+        a{
+            font-size: 1.1rem;
+            margin: 0 1em;
+            font-weight: lighter;
+        }
+    }
+}
+@media screen and(min-width:1100px) {
+    .right-aligned {
+        margin: .3em 0 0 45vw;
+    }
+}
+@media screen and(min-width:1200px) {
+    .right-aligned {
+        margin: .3em 0 0 50vw;
+    }
+
+        .inner-links {
+            width: 50%;
+            margin: 2em auto;
+        }
+}
+// Form Validation Error Class
+.error{
+    color: red;
+    font-weight: lighter;
+    font-size: .9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // CLASS FOR NAV RESPONSIVENESS
+.open-nav{
+    transform: translateX(0);
+}
+.background-nav{
+    background-color: rgb(33, 32, 32);
+    padding: 1em  3.7em 1em 2.7em;
+    margin-top: -1em;
+    margin-left: -1.2em;
+}
