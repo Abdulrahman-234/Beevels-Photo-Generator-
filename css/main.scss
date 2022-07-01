@@ -1,17 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-.output{
+
+.output {
     // position: fixed;
     color: white;
 }
+
+
 // MODAL
-.modal{
+.modal {
     display: none;
     position: fixed;
     z-index: 2;
@@ -19,25 +23,32 @@ body {
     width: 100%;
     background-color: rgba(79, 77, 77, 0.815);
 }
-.modal-content{
+
+.modal-content {
     width: 50%;
-    margin: 5% auto;
+    margin: 5vh auto;
     background-color: white;
-    .modal-header{
+
+    .modal-header {
         background-color: rgb(56, 198, 141);
         display: flex;
         padding: 1em .7em;
-        h3{
+
+        h3 {
             color: wheat;
+            font-weight: lighter;
         }
-        .close-btn{
+
+        .close-btn {
             margin-left: auto;
             cursor: pointer;
         }
     }
-    form{
+
+    form {
         padding: 1em .4em;
-        input{
+
+        input {
             width: 100%;
             padding: .5em;
             border-top: none;
@@ -45,41 +56,53 @@ body {
             border-right: none;
             border-bottom: 2px solid rgb(56, 198, 141);
         }
-        .submit{
+
+        .submit {
             width: 100%;
-            padding: .6em;
+            padding: .2em;
             border: 3px solid rgb(56, 198, 141);
             background-color: rgb(56, 198, 141);
+            color: white;
             cursor: pointer;
             font-size: 1.3rem;
             font-weight: bold;
         }
     }
-        .modal-footer {
-            background-color: rgb(56, 198, 141);
-            display: flex;
-            padding: 1em .7em;
-        }
 
-    .sign-btn{
+    .modal-footer {
+        background-color: rgb(56, 198, 141);
+        display: flex;
+        padding: 1em .4em;
+    }
+
+    .already {
+        color: rgb(241, 198, 117);
+        font-weight: lighter;
+        margin: 0 9em;
+    }
+
+    .sign-btn {
         cursor: pointer;
-        color: green;
+        color: white;
+        margin: 0 1em;
     }
 }
 
 
 // To hide different NAVs on different screen sizes
-.mobile-hidden{
+.mobile-hidden {
     display: none;
 }
 
 
-.upload{
+.upload {
     display: block;
 }
+
 a {
     text-decoration: none;
 }
+
 header {
     background: url(/images/pexels-photo-3646932.jpeg);
     background-clip: border-box;
@@ -87,8 +110,11 @@ header {
     background-repeat: repeat-y;
     padding: .9em 1.1em;
 }
+
+
 .logo {
     display: flex;
+
     .logo-img {
         width: 40px;
         height: 40px;
@@ -97,42 +123,53 @@ header {
     }
 
 }
-ul{
+
+ul {
     display: flex;
     list-style: none;
-    li{
+
+    li {
         margin: 0 1em;
-        a{
+
+        a {
             text-decoration: none;
-            &:hover{
+
+            &:hover {
                 color: rgb(56, 198, 141);
             }
         }
     }
 }
-.icon-white{
+
+.icon-white {
     color: white;
     font-size: 2rem;
     cursor: pointer;
 }
+
 .nav-container {
     position: fixed;
     display: flex;
     margin: 0 0 4em 0;
-    z-index: 1;
+    z-index: 10;
 }
-.right-aligned{
+
+.right-aligned {
     margin: .3em 0 0 65vw;
 }
+
 .notification {
     margin: 0 .6em;
 }
+
 .nav-right-aligned {
     margin: .6em 0 0 .2em;
 }
+
 .nav-notification {
     margin: 0 .4em;
 }
+
 nav {
     display: flex;
     transform: translateX(100%);
@@ -145,6 +182,7 @@ nav {
     background-color: black;
     padding: .9em 1.1em;
 }
+
 .nav-input-container {
     width: 70%;
     background-color: white;
@@ -173,7 +211,7 @@ nav {
     }
 }
 
- // BRIEF
+// BRIEF
 .brief {
     width: 100%;
     margin: 6em auto 7em auto;
@@ -233,14 +271,16 @@ nav {
         &:hover {
             color: black;
         }
-        &:focus{
+
+        &:focus {
             color: white;
-                padding: .8em 1.3em;
-                background-color: black;
-                border-radius: 9999px;
+            padding: .8em 1.3em;
+            background-color: black;
+            border-radius: 9999px;
         }
     }
-    .home:focus{
+
+    .home:focus {
         color: white;
         padding: .8em 1.3em;
         background-color: black;
@@ -271,59 +311,67 @@ nav {
 }
 
 @media screen and (min-width:530px) {
-    .brief{
+    .brief {
         margin: 8em auto 7em auto;
     }
-        .right-aligned {
-            margin: .3em 0 0 58vw;
-        }
 
-.inner-links {
-    width: 80%;
-    margin: 2em auto;
+    .right-aligned {
+        margin: .3em 0 0 58vw;
+    }
+
+    .inner-links {
+        width: 80%;
+        margin: 2em auto;
+    }
 }
-}
+
 @media screen and (min-width:680px) {
-    .brief{
+    .brief {
         width: 100%;
+
         .brief-heading {
             font-size: 2.2rem;
         }
     }
-        .right-aligned {
-            margin: .3em 0 0 63vw;
-        }
 
-        .inner-links {
-            width: 90%;
-            margin: 2em auto;
-        }
+    .right-aligned {
+        margin: .3em 0 0 63vw;
+    }
+
+    .inner-links {
+        width: 90%;
+        margin: 2em auto;
+    }
 }
+
 @media screen and (min-width:700px) {
-    .brief{
+    .brief {
         .brief-heading {
             font-size: 2.15rem;
             color: white;
         }
     }
+
     .inner-links {
-    width: 100%;
-    margin: 2em auto;
+        width: 100%;
+        margin: 2em auto;
     }
 }
 
 @media screen and (min-width:720px) {
-    .brief{
+    .brief {
         width: 95%;
         margin: 7em auto;
     }
-        .right-aligned {
-            margin: .3em 0 0 70vw;
-        }
-        .inner-links {
-            width: 60%;
-            margin: 2em auto;
-        }
+
+    .right-aligned {
+        margin: .3em 0 0 70vw;
+    }
+
+    .inner-links {
+        width: 60%;
+        margin: 2em auto;
+    }
 }
 
 @media screen and (min-width:750px) {
@@ -331,69 +379,83 @@ nav {
         width: 90%;
     }
 }
+
 @media screen and (min-width:770px) {
     .brief {
         width: 85%;
     }
-        .inner-links {
-            width: 60%;
-            margin: 2em auto;
-        }
+
+    .inner-links {
+        width: 60%;
+        margin: 2em auto;
+    }
 }
 
 // MIDDLE-TAB MEDIA QUERY
-@media screen and (min-width:850px){
+@media screen and (min-width:850px) {
+
     // To hide different NAVs on different screen sizes
-        .middle-hidden {
+    .middle-hidden {
         display: none;
-        }
-        .middle-reveal{
-            display: inline;
-            color: white;
-        }
-    .ridwan-list{
+    }
+
+    .middle-reveal {
+        display: inline;
+        color: white;
+    }
+
+    .ridwan-list {
         margin-right: -.3em;
     }
 
-    header{
+    header {
         background-position: unset;
         background-repeat: no-repeat;
     }
-    .ridwan{
+
+    .ridwan {
         width: 25px;
         height: 25px;
         border-radius: 50%;
         cursor: pointer;
         margin-top: -.2em;
     }
-    .upload{
+
+    .upload {
         padding: .65em 1.7em;
         background-color: rgb(56, 198, 141);
         border-radius: 5%;
-        &:hover{
+
+        &:hover {
             background-color: #fff;
             font-weight: bolder;
         }
     }
-        .right-aligned {
-            margin: .3em 0 0 60vw;
-        }
-    .brief{
+
+    .right-aligned {
+        margin: .3em 0 0 60vw;
+    }
+
+    .brief {
         width: 80%;
         margin: 7.5em auto 9em auto;
+
         .brief-input {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-weight: lighter;
         }
     }
-    .inner-links{
+
+    .inner-links {
         width: 60%;
         margin: 3em auto;
     }
-        #open-btn {
-            display: none;
-        }
-    .suggested{
+
+    #open-btn {
+        display: none;
+    }
+
+    .suggested {
         display: unset;
         color: white;
     }
@@ -401,74 +463,88 @@ nav {
 
 
 // DESKTOP MEDIA QUERY
-@media screen and (min-width:1000px){
+@media screen and (min-width:1000px) {
+
     // To hide different NAVs on different screen sizes
     .desktop-hidden {
         display: none;
     }
-    .desktop-reveal{
+
+    .desktop-reveal {
         display: inline;
         color: white;
     }
-    #open-btn{
+
+    #open-btn {
         display: none;
     }
 
-    header{
+    header {
         background-position: unset;
         background-repeat: no-repeat;
     }
-    .logo-text{
+
+    .logo-text {
         margin: .5em;
         color: white;
         font-weight: lighter;
         cursor: pointer;
     }
-    ul {    
+
+    ul {
         li {
             margin: 0 1em;
         }
     }
+
     .right-aligned {
-    margin: .3em 0 0 40vw;
+        margin: .3em 0 0 40vw;
     }
-    .brief{
+
+    .brief {
         width: 50%;
         margin: 7.5em auto 9em auto;
     }
-    .brief-paragraph{
+
+    .brief-paragraph {
         color: rgb(237, 230, 230);
     }
+
     .content {
         margin: 1em 2em;
     }
-    .inner-links{
+
+    .inner-links {
         width: 60%;
         margin: 2em auto;
-        a{
+
+        a {
             font-size: 1.1rem;
             margin: 0 1em;
             font-weight: lighter;
         }
     }
 }
+
 @media screen and(min-width:1100px) {
     .right-aligned {
         margin: .3em 0 0 45vw;
     }
 }
+
 @media screen and(min-width:1200px) {
     .right-aligned {
         margin: .3em 0 0 50vw;
     }
 
-        .inner-links {
-            width: 50%;
-            margin: 2em auto;
-        }
+    .inner-links {
+        width: 50%;
+        margin: 2em auto;
+    }
 }
+
 // Form Validation Error Class
-.error{
+.error {
     color: red;
     font-weight: lighter;
     font-size: .9rem;
@@ -491,12 +567,13 @@ nav {
 
 
 // // CLASS FOR NAV RESPONSIVENESS
-.open-nav{
+.open-nav {
     transform: translateX(0);
 }
-.background-nav{
+
+.background-nav {
     background-color: rgb(33, 32, 32);
-    padding: 1em  3.7em 1em 2.7em;
+    padding: 1em 3.7em 1em 2.7em;
     margin-top: -1em;
     margin-left: -1.2em;
 }
