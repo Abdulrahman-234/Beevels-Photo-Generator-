@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="get" id="form">
+          <label for="name" class="label">First Name</label>
+          <br />
+          <input type="text" name="First Name" id="first-name" />
+          <br />
+          <div id="first-message"></div>
+          <br />
+          <label for="name">Mobile Number</label>
+          <br />
+          <input type="text" name="Mobile Number" id="mobile-number" />
+          <br />
+          <div id="mobile-message"></div>
+          <br />
+          <label for="name">Email</label>
+          <br />
+          <input  name="Email" type="email" id="email" />
+          <br />
+          <div id="email-message"></div>
+          <br />
+          <label for="name">Password</label>
+          <br />
+          <input type="password" name="Password" id="password" />
+          <div id="password-message"></div>
+          <br />
+          <input type="submit" value="Submit" class="submit" />
+        </form>
+        <script>
+            const form = document.querySelector('form');
+            const name = document.querySelector('#first-name').value;
+            const password = document.querySelector('#password').value;
+            const email = document.querySelector('#email').value;
+            const number = document.querySelector('#mobile-number');
+            const numberMessage = document.querySelector('#mobile-message');
+            const emailMessage = document.querySelector('#email-message');
+            form.addEventListener('submit', formSubmit);
+            function formSubmit(e) {
+                e.preventDefault();
+                const regx = /^0\d{9}$/
+                if (regx.test(number.value)) {
+                    numberMessage.innerHTML = 'Valid'
+                    numberMessage.style.color = 'green'
+                    setTimeout(() => {
+                        numberMessage.remove()
+                    }, 2000);
+                } else {
+                    numberMessage.innerHTML = 'invalid'
+                    numberMessage.style.color = 'red'
+                    setTimeout(() => {
+                        numberMessage.remove()
+                    }, 2000);
+                }
+            }
+        </script>
+</body>
+</html>
